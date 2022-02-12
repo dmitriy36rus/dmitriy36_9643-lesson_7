@@ -1,0 +1,220 @@
+@import "null.css";
+@import url("https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+@font-face{
+    font-family:"ZenOldMincho";
+    src:url("../fonts/ZenOldMincho-Regular.woff2") format("woff2"), url("../fonts/ZenOldMincho-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: "ZenOldMincho";
+    src:url("../fonts/ZenOldMincho-Bold.woff2") format("woff2"), url("../fonts/ZenOldMincho-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: "ZenOldMincho";
+    src:url("../fonts/ZenOldMincho-Black.woff2") format("woff2"), url("../fonts/ZenOldMincho-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: "Comforter";
+    src:url("../fonts/Comforter-Regular.woff2") format("woff2"), url("../fonts/Comforter-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+/*Подключени еграниц элементов для визуализации схлопывания*/
+/*
+*{
+    border: 1px solid black;
+}
+*/
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+}
+body{
+    font-family: "ZenOldMincho", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: rgb(238, 242, 160);
+}
+.header{
+    padding: 5px;
+    border-color: blue;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1{
+    border-color: brown;
+}
+main{
+    border-color: green;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+/* Стили для певого раздела*/
+.part1{
+    font-family: "ZenOldMincho", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    border: 5px solid green;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-image: url("../img/1.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    line-height: 1.5;
+}
+h1{
+    font-family: "caveat";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    color: red;
+}
+h2{
+    font-family: "caveat";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(9, 46, 252);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.type{
+    margin-bottom: 12px;
+    padding: 5px;
+}
+.les1{
+    background-color: beige;
+}
+.les2{
+    background-image: linear-gradient(
+    90deg,
+    hsl(240deg 44% 71%) 0%,
+    hsl(285deg 51% 72%) 15%,
+    hsl(326deg 99% 78%) 26%,
+    hsl(342deg 100% 77%) 34%,
+    hsl(10deg 100% 76%) 40%,
+    hsl(34deg 100% 66%) 45%,
+    hsl(50deg 100% 56%) 48%,
+    hsl(67deg 86% 54%) 51%,
+    hsl(105deg 84% 66%) 54%,
+    hsl(159deg 100% 46%) 58%,
+    hsl(173deg 100% 45%) 63%,
+    hsl(186deg 100% 47%) 71%,
+    hsl(193deg 100% 50%) 83%,
+    hsl(198deg 100% 50%) 100%
+);
+}
+.les3{
+    background-image: url("../img/2.jpg");
+    background-size: 150px auto;
+    background-repeat: no-repeat;
+}
+.les4{
+    background-image: url("../img/2.jpg");
+    background-size: 70px auto;
+    background-repeat: repeat-x;
+}
+.les5{
+    background-image: url("../img/2.jpg");
+    background-size: 50px auto;
+    background-repeat: repeat-y;
+    border: 5px dotted red;
+}
+.les6{
+    background-image: url("../img/4.png");
+    background-size: 500px auto;
+}
+.les7{
+    background-image: url("../img/2.jpg");
+    background-size: 70px auto;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    outline: 5px double blue;
+}
+.les8{
+    background-image: url("../img/4.png");
+    background-size: 70px auto;
+    background-repeat: no-repeat;
+    background-position: 30px 10px;
+}
+.les9{
+    background-image: url("../img/4.png"), url("../img/4.png"), url("../img/4.png");
+    background-size: 200px auto, 100px auto, 150px auto;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 30px 10px, 50% 50%, 1400px 20px;
+}
+.les10{
+    background-image: url("../img/5.jpg");
+    background-size: 800px auto;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    border: 6px dashed rgb(46, 13, 46);
+    border-radius: 15px;
+    overflow: scroll;
+    max-height: 300px;
+}
+.blue{
+    color: blue;
+    font-family: "comforter";
+    font-size: 40px;
+}
+.green{
+    color: green;
+    font-family: "comforter";
+    font-size: 40px;
+}
+
+
+/* Стили для второго раздела*/
+.part2 *{
+    border: 1px solid black;
+}
+.part2{
+    margin-bottom: 20px;
+    border: 5px solid rgb(255, 0, 0);
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 10px
+}
+.maket{
+    margin-bottom: 10px;
+    background-color: #E5E5E5;
+}
+h3{
+    font-size: 46px;
+    font-weight: 900;
+    max-width: 810px;
+    line-height: 1.3;
+    margin-bottom: 26px;
+}
+.info div{
+    display:inline-block;
+}
+
+
+
+/* Стили для третьего раздела*/
+.part3{
+    border-color: rgb(0, 0, 255);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
